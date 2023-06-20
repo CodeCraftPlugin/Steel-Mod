@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "steel-mod",
+  "version": "${version}",
+  "name": "Steel Mod",
+  "description": "",
+  "authors": [
+    "CodeCraft"
+  ],
+  "contact": {
+    "repo": "https://github.com/CodeCraft/Steel Mod"
+  },
+  "license": "MIT",
+  "icon": "assets/steel-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.codecraft.steelmod.client.SteelModClient"
+    ],
+    "fabric-datagen": [
+      "me.codecraft.steelmod.SteelModDataGeneration"
+    ],
+    "main": [
+      "me.codecraft.steelmod.SteelMod"
+    ]
+  },
+  "mixins": [
+    "steel-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
