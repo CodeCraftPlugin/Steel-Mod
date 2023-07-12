@@ -47,6 +47,7 @@ dependencies {
 
         // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "io.github.codecraftplugin:registry-lib:${project.registery_lib_version}"
     }
 
 processResources {
